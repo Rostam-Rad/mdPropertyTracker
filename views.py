@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django import render
 import requests
 
 md_response = requests.get('https://geodata.md.gov/imap/rest/services/PlanningCadastre/MD_PropertyData/MapServer/0/query?where=1%3D1&outFields=nfmimpvl,nfmlndvl,zipcode,mdpvdate&outSR=4326&f=json')
